@@ -5,6 +5,31 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -13,6 +38,7 @@
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .nav-text ul {
@@ -35,42 +61,21 @@
     color: #fff;
 }
 
-.nav-dil.dropdown {
-    position: relative;
-}
-
-.dropdown-toggle {
-    background-color: transparent;
-    border: none;
-    color: #fff;
+.nav-sagtaraf i {
+    font-size: 20px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.sepet i {
+    margin-left: 10px;
 }
 
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+/* Hover Effect */
+.nav-text ul li a:hover {
+    color: #ffd700;
 }
 
-.dropdown-content img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.dropdown-content a:hover {
-    background-color: #555;
-}
-
-.show {
-    display: block;
+.nav-sagtaraf a i {
+    color: white;
 }
